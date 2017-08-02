@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <com.example.maopao.cla.CircleImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:id="@+id/back"/>
+         <com.example.maopao.cla.CircleImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/send"
+            android:id="@+id/send"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/add_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="15"
+        android:maxLines="20"
+        android:scrollbars="vertical" />
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/background"/>
+    
+</LinearLayout>

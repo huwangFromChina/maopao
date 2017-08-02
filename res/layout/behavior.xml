@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0099DD"
+        android:orientation="horizontal">
+     <com.example.maopao.cla.CircleImageView  
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:id="@+id/menu"
+        android:src="@drawable/menu"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="动态"/>
+    
+     <com.example.maopao.cla.CircleImageView 
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:id="@+id/public_behavior"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_friend"/>
+    </RelativeLayout>
+
+    <Button 
+         android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/update"
+        android:background="@drawable/backgroundbutton"
+        android:textColor="#999"
+        android:text="testButton/Updata"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/test"/>
+    
+    
+    <View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#DCDCDC"/>
+    
+    <ListView
+        android:id="@+id/behavior_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    
+</LinearLayout>

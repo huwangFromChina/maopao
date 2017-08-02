@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/about_image"
+    android:scaleType="center">
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#a0d2ad"
+          android:text="本软件是模仿\nQQ、微信等社交软件，\n具有即时通讯功能，\n由xx团队开发完成"
+          android:layout_marginTop="400dp"
+          android:layout_marginLeft="40dp"
+          android:textSize="20sp"/>
+</LinearLayout>

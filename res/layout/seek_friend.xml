@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="50dp"
+        android:hint="name/phone"
+        android:id="@+id/input"/>
+     <com.example.maopao.cla.CircleImageView 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:src="@drawable/main_image1"
+        android:id="@+id/seek"/>
+    </LinearLayout>
+    
+    
+     <View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:background="#DCDCDC"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:background="#555"
+        android:visibility="gone"
+        android:id="@+id/seek_result_layout"
+        android:layout_marginRight="3dp">
+    <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/seek_result">
+     <com.example.maopao.cla.CircleImageView 
+        android:id="@+id/seek_result_portrait"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/newpo"/>
+    </LinearLayout>
+    
+   <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/seek_result_name"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ccc"
+        android:textSize="20sp"
+        android:text="name"/>
+    
+    <TextView
+        android:id="@+id/seek_result_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ccc"
+        android:layout_gravity="right"
+        android:text="description"/>
+    
+    </LinearLayout>
+    </LinearLayout>
+    
+
+        
+        
+</LinearLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/seek_friend"/>
+
+</LinearLayout>

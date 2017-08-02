@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0099DD"
+        android:orientation="horizontal">
+        <Button 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="renew"
+        android:id="@+id/updateFriend"
+            />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="朋友"/>
+      <com.example.maopao.cla.CircleImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_friend"
+            android:id="@+id/add_friend"/>
+     </RelativeLayout>
+     
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/notify"
+        android:background="#57e"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有新朋友"/>
+        
+      </LinearLayout>
+     
+     <View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#DCDCDC"/>
+    <ListView
+        android:layout_marginTop="3dp"
+        android:id="@+id/test_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
